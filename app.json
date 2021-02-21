@@ -1,0 +1,25 @@
+{
+  "name": "mmmaxwwwell/grafana-webhook-statuspageio",
+  "description": "A dead simple grafana to statuspage.io connector.",
+  "repository": "https://github.com/mmmaxwwwell/grafana-webhook-statuspageio",
+  "logo": "",
+  "keywords": [
+    "node",
+    "express",
+    "grafana",
+    "statuspage.io"
+  ],
+  "env": {
+    "STATUSPAGE_API_KEY": {
+      "required": true
+    },
+    "STATUSPAGE_API_USERS": {
+      "required": true
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
