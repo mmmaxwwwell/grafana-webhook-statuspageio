@@ -49,7 +49,6 @@ const getMaintenances = (pageId) => new Promise( async (resolve, reject) => {
 
     response.on('end', () => {
       let data = JSON.parse(Buffer.concat(datas).toString())
-      console.log({data})
       resolve(data)
     })
 
