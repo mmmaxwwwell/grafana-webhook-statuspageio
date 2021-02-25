@@ -97,7 +97,7 @@ const handleAlerts = async (alerts) => {
       }
     }
 
-    if(underMaintenance)
+    if(alert.status != 'resolved' && underMaintenance)
       status = 'under_maintenance'
     request.patch(
       {
